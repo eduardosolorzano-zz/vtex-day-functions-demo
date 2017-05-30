@@ -1,0 +1,12 @@
+{
+  "name": "review",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "My Reviews Apps",
+  "description": "Allows users to send product reviews",
+  "dependencies": {
+    "infra:colossus-js": "0.x",
+    "npm:@vtex/api": "0.20.5",
+    "npm:co-body": "^5.1.1"
+  }
+}

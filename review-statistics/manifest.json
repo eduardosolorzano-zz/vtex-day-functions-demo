@@ -1,0 +1,11 @@
+{
+  "name": "review-statistics",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Review Integration",
+  "description": "Collects statistics about product reviews",
+  "dependencies": {
+    "infra:colossus-js": "0.x",
+    "vtex.review": "0.x"
+  }
+}
