@@ -1,18 +1,12 @@
 var counter = 0
 
 module.exports = {
-  events: {
-    'vtex.review:*:new-review': async (body, ctx) => {
-      counter++
-    }
-  },
+  events: {},
 
   handler: async (req, res, ctx) => {
     res.status = 200
-    res.body = counter + ' reviews sent'
+    res.body = counter + ' reviews received'
   },
 
-  routes: {
-    '/review-statistics': {}
-  }
+  routes: {'/review-statistics': {}}
 }

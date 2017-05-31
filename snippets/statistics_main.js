@@ -9,10 +9,14 @@ module.exports = {
 
   handler: async (req, res, ctx) => {
     res.status = 200
-    res.body = counter + ' reviews sent'
+    res.body = counter + ' reviews received'
   },
 
-  routes: {
-    '/review-statistics': {}
+  routes: async function(ctx) {
+    if (counter > 0) {
+      return {'/review-statistics': {}}
+    } else {
+      return {}
+    }
   }
 }
